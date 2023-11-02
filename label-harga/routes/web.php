@@ -18,4 +18,9 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::post('/final', [LabelController::class, 'show']);
+
+Route::get('/lebel-harga', function () {
+    return view('lebelHarga');
+});
+
+Route::post('/lebel-harga', [LabelController::class, 'show']);
