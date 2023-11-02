@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.label {
+    width: 9cm;
+    border: 2px solid black;
+    /* background-color: red; */
+    padding: 5px 10px;
+    margin: 0 1cm;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Roboto, sans-serif ;
+    border-radius: 15px;
+    background-color: orange;
+}
+
+.hargas {
+    margin: 10px 0;
+    background-color: white;
+    border-radius: 15px;
+    padding: 10px;
+
+}
+
+.nama-barang {
+    font-size: 25px;
+
+}
+
+.harga {
+    display: flex;
+    margin-top: 5px;
+    justify-content:space-between;
+    /* background-color: blue; */
+    font-size: 18px;
+
+}
+
+.harga-total {
+    margin-right: 10px;
+}
+

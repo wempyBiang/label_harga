@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class LabelController extends Controller
 {
-    public function show(){
-        return view("final");
+    public function show(Request $req){
+        return view("final", ['data'=>$req]);
     }
 }

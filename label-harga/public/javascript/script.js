@@ -25,7 +25,7 @@ jmlSatuan1.addEventListener("blur", function () {
         alert("Mohon isi Jumlah Barang dahulu!!")
     } else {
         var hargaPcs = harga1.value/jmlSatuan1.value;
-        hargaSatuan1.textContent = hargaPcs;
+        hargaSatuan1.textContent = parseInt(hargaPcs);
     }
  });
 
@@ -40,7 +40,7 @@ jmlSatuan1.addEventListener("blur", function () {
         alert("Mohon isi Jumlah Barang dahulu!!")
     } else {
         var hargaPcs = harga2.value/jmlSatuan2.value;
-        hargaSatuan2.textContent = hargaPcs;
+        hargaSatuan2.textContent = parseInt(hargaPcs);
     }
  });
 
@@ -55,7 +55,7 @@ jmlSatuan1.addEventListener("blur", function () {
         alert("Mohon isi Jumlah Barang dahulu!!")
     } else {
         var hargaPcs = harga3.value/jmlSatuan3.value;
-        hargaSatuan3.textContent = hargaPcs;
+        hargaSatuan3.textContent = parseInt(hargaPcs);
     }
  });
 
