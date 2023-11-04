@@ -12,6 +12,8 @@
     <div class="menus">
         <a href="/lebel-harga">Lebel Harga</a>
         <a href="/input-data">Input Data</a>
+        <a href="/lebel-database">Lebel dari database</a>
+
     </div>
 @endsection
 

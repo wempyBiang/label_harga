@@ -25,12 +25,17 @@ Route::get('/lebel-harga', function () {
     return view('lebelHarga');
 });
 
+Route::post('/lebel-harga', [LabelController::class, 'show']);
+
 Route::get('/input-data', function () {
     return view('inputData');
 });
+
 Route::post('/input-data', [BarangController::class, "import"]);
 
-Route::post('/lebel-harga', [LabelController::class, 'show']);
+Route::get('/lebel-database', function () {
+    return view('lebelDatabase');
+});
 
 
 Route::controller(UserController::class)->group(function(){
