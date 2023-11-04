@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\BarangController;
 use App\Http\Controllers\LabelController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -23,4 +25,16 @@ Route::get('/lebel-harga', function () {
     return view('lebelHarga');
 });
 
+Route::get('/input-data', function () {
+    return view('inputData');
+});
+Route::post('/input-data', [BarangController::class, "import"]);
+
 Route::post('/lebel-harga', [LabelController::class, 'show']);
+
+
+Route::controller(UserController::class)->group(function(){
+    Route::get('users', 'index');
+    Route::get('users-export', 'export')->name('users.export');
+    Route::post('users-import', 'import')->name('users.import');
+});

@@ -9,7 +9,7 @@
 @endsection
 
 @section('content')
-<form action="/final" method="post">
+<form action="/lebel-harga" method="post">
     @csrf
     <div class="labels">
         <div class="label">

@@ -11,6 +11,7 @@
 @section('content')
     <div class="menus">
         <a href="/lebel-harga">Lebel Harga</a>
+        <a href="/input-data">Input Data</a>
     </div>
 @endsection
 
