@@ -1,7 +1,9 @@
 <?php
 
 use App\Http\Controllers\BarangController;
+use App\Http\Controllers\InputKode;
 use App\Http\Controllers\LabelController;
+use App\Http\Controllers\LebelDatabase;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -36,6 +38,14 @@ Route::post('/input-data', [BarangController::class, "import"]);
 Route::get('/lebel-database', function () {
     return view('lebelDatabase');
 });
+
+Route::post('/lebel-database', [LebelDatabase::class, "show"]);
+
+Route::get('/input-kode', function () {
+    return view('inputKode');
+});
+
+Route::post("/input-kode", [InputKode::class, "show"]);
 
 
 Route::controller(UserController::class)->group(function(){

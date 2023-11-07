@@ -1,19 +1,18 @@
 @extends('layout.main')
 
 @section('css')
-    <link rel="stylesheet" href="css/lebelHarga.css">
+    <link rel="stylesheet" href="css/style.css">
 @endsection
 
-@section('title')
-    Lebel Databse
+@section('Title')
+    Final Label
 @endsection
 
 @section('content')
-    <div class="page">
-        
-    </div>
-@endsection
-
-@section('javascript')
-    {{-- <script src="javascript/script.js"></script> --}}
+    <form action="/lebel-database" method="post" enctype="multipart/form-data">
+        @csrf
+        <input type="file" name="fileBarcode" >
+        <br>
+        <button type="submit">Kirim</button>
+    </form>
 @endsection

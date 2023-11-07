@@ -13,6 +13,7 @@
         <a href="/lebel-harga">Lebel Harga</a>
         <a href="/input-data">Input Data</a>
         <a href="/lebel-database">Lebel dari database</a>
+        <a href="/input-kode">Input Kode</a>
 
     </div>
 @endsection
