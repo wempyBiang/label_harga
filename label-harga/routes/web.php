@@ -5,6 +5,7 @@ use App\Http\Controllers\InputKode;
 use App\Http\Controllers\LabelController;
 use App\Http\Controllers\LebelDatabase;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\TestDatabase;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -47,9 +48,9 @@ Route::get('/input-kode', function () {
 
 Route::post("/input-kode", [InputKode::class, "show"]);
 
-
-Route::controller(UserController::class)->group(function(){
-    Route::get('users', 'index');
-    Route::get('users-export', 'export')->name('users.export');
-    Route::post('users-import', 'import')->name('users.import');
+Route::get('/test-database', function () {
+    return view('testDatabse');
 });
+
+Route::post("/test-database", [TestDatabase::class, "show"]);
+

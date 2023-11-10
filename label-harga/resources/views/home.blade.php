@@ -14,6 +14,7 @@
         <a href="/input-data">Input Data</a>
         <a href="/lebel-database">Lebel dari database</a>
         <a href="/input-kode">Input Kode</a>
+        <a href="/test-database">Test Database eisdata</a>
 
     </div>
 @endsection

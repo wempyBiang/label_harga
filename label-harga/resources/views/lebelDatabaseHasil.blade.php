@@ -33,32 +33,32 @@
         @endphp
 
         <div class="label">
-            <h1 class="nama-barang">{{$barangs[$lebelCounter]->nama}}</h1>
+            <h1 class="nama-barang">{{$barangs[$lebelCounter]->cSTKdesc}}</h1>
             <div class="hargas">
                 <div class="harga">
                     <div class="harga-total">
-                        <p>Rp {{$barangs[$lebelCounter]->hrg1}}</span>  <span class="satuan">/ 1 PCS</span></p>
+                        <p>Rp {{$barangs[$lebelCounter]->nHrgQty01 * 1}}</span>  <span class="satuan">/ {{$barangs[$lebelCounter]->nHrgQty1}} PCS</span></p>
                     </div>
                     <div class="harga-pcs">
-                        <p>(<span>{{$barangs[$lebelCounter]->hrg1}}</span> <span class="satuan">/PCS</span>)</p>
+                        <p>(<span>{{$barangs[$lebelCounter]->nHrgQty01 * 1}}</span> <span class="satuan">/PCS</span>)</p>
                     </div>
                 </div>
                 <div class="harga">
                     <div class="harga-total">
-                        <p>Rp <span>{{$barangs[$lebelCounter]->hrg3 * $barangs[$lebelCounter]->qty3}}</span> / <span class="satuan">{{$barangs[$lebelCounter]->qty3}} PCS</span></p>
-        
+                        <p>Rp <span>{{$barangs[$lebelCounter]->nHrgQty2 * $barangs[$lebelCounter]->nHrgQty02}}</span> / <span class="satuan">{{$barangs[$lebelCounter]->nHrgQty2}} PCS</span></p>
+
                     </div>
                     <div class="harga-pcs">
-                        <p>({{$barangs[$lebelCounter]->hrg3}}</span> <span class="satuan">/PCS</span>)</p>
+                        <p>({{$barangs[$lebelCounter]->nHrgQty02 * 1}}</span> <span class="satuan">/PCS</span>)</p>
                     </div>
                 </div>
                 <div class="harga">
                     <div class="harga-total">
-                        <p>Rp <span>{{$barangs[$lebelCounter]->hrg5 * $barangs[$lebelCounter]->qty5}}</span> <span class="satuan"> / {{$barangs[$lebelCounter]->qty5}} PCS</span></p>
-        
+                        <p>Rp <span>{{$barangs[$lebelCounter]->nHrgQty03 * $barangs[$lebelCounter]->nHrgQty3}}</span> <span class="satuan"> / {{$barangs[$lebelCounter]->nHrgQty3}} PCS</span></p>
+
                     </div>
                     <div class="harga-pcs">
-                        <p>(<span>{{$barangs[$lebelCounter]->hrg5}}</span> <span class="satuan">/PCS</span>)</p>
+                        <p>(<span>{{$barangs[$lebelCounter]->nHrgQty03  * 1}}</span> <span class="satuan">/PCS</span>)</p>
                     </div>
                 </div>
             </div>
@@ -83,32 +83,32 @@
             }
         @endphp
         <div class="label">
-            <h1 class="nama-barang">{{$barangs[$lebelCounter]->nama}}</h1>
+            <h1 class="nama-barang">{{$barangs[$lebelCounter]->cSTKdesc}}</h1>
             <div class="hargas">
                 <div class="harga">
                     <div class="harga-total">
-                        <p>Rp {{$barangs[$lebelCounter]->hrg1}}</span> <span class="satuan">PCS/1</span></p>
+                        <p>Rp {{$barangs[$lebelCounter]->nHrgQty01 * 1}}</span>  <span class="satuan">/ 1 PCS</span></p>
                     </div>
                     <div class="harga-pcs">
-                        <p>(<span>{{$barangs[$lebelCounter]->hrg1}}</span> <span class="satuan">/PCS</span>)</p>
+                        <p>(<span>{{$barangs[$lebelCounter]->nHrgQty01 * 1}}</span> <span class="satuan">/PCS</span>)</p>
                     </div>
                 </div>
                 <div class="harga">
                     <div class="harga-total">
-                        <p>Rp <span>{{$barangs[$lebelCounter]->hrg3 * $barangs[$lebelCounter]->qty3}}</span> PCS/<span class="satuan">{{$barangs[$lebelCounter]->qty3}}</span></p>
-        
+                        <p>Rp <span>{{$barangs[$lebelCounter]->nHrgQty2 * $barangs[$lebelCounter]->nHrgQty02}}</span> / <span class="satuan">{{$barangs[$lebelCounter]->nHrgQty2}} PCS</span></p>
+
                     </div>
                     <div class="harga-pcs">
-                        <p>({{$barangs[$lebelCounter]->hrg3}}</span> <span class="satuan">/PCS</span>)</p>
+                        <p>({{$barangs[$lebelCounter]->nHrgQty02 * 1}}</span> <span class="satuan">/PCS</span>)</p>
                     </div>
                 </div>
                 <div class="harga">
                     <div class="harga-total">
-                        <p>Rp <span>{{$barangs[$lebelCounter]->hrg5 * $barangs[$lebelCounter]->qty5}}</span> <span class="satuan">PCS/{{$barangs[$lebelCounter]->qty5}}</span></p>
-        
+                        <p>Rp <span>{{$barangs[$lebelCounter]->nHrgQty03 * $barangs[$lebelCounter]->nHrgQty3}}</span> <span class="satuan"> / {{$barangs[$lebelCounter]->nHrgQty3}} PCS</span></p>
+
                     </div>
                     <div class="harga-pcs">
-                        <p>(<span>{{$barangs[$lebelCounter]->hrg5}}</span> <span class="satuan">/PCS</span>)</p>
+                        <p>(<span>{{$barangs[$lebelCounter]->nHrgQty03  * 1}}</span> <span class="satuan">/PCS</span>)</p>
                     </div>
                 </div>
             </div>
